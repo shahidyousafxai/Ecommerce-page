@@ -1,0 +1,254 @@
+/*################    GENERAL CSS    ###############*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root {
+  --black: #2c2c54;
+  --orange: #ff9f1a;
+  --grey: #d4d3d3;
+  --lightgrey: rgb(247, 245, 245);
+}
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: -6rem;
+  scroll-behavior: smooth;
+}
+.heading {
+  font-size: 3em;
+  margin: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.heading span {
+  color: var(--orange);
+}
+.stars i {
+  color: var(--orange);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+/*################    NAVBAR    ###############*/
+#menu-bar {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid var(--black);
+  color: var(--black);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 1.8rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  font-size: 2rem;
+  color: var(--black);
+}
+header .navbar a {
+  font-size: 1.4rem;
+  color: var(--black);
+  margin: 0 1rem;
+}
+header .icons a {
+  font-size: 2rem;
+  color: var(--black);
+  margin-left: 1.5rem;
+}
+header .navbar a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+header .navbar a:hover,
+header .icons a:hover {
+  color: var(--orange);
+}
+/*################    PRODUCT SECTION    ###############*/
+.product .shoe-sec {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid var(--grey);
+  padding: 2.5em 2em;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: var(--lightgrey);
+}
+.product .shoe-sec .sec-left-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 30em;
+  width: 50%;
+}
+.product .shoe-sec .sec-left-container .display-shoe img {
+  width: 80%;
+  margin-left: 30px;
+}
+.product .shoe-sec .detail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.product .shoe-sec .detail .price {
+  font-weight: 700;
+  margin: 5px 0;
+}
+.product .shoe-sec .detail .price span {
+  font-size: 0.7em;
+  text-decoration: line-through;
+  color: var(--orange);
+  font-weight: 700;
+}
+.product .shoe-sec .detail a {
+  border: 1.5px solid var(--black);
+  border-radius: 3px;
+  width: 100px;
+  text-align: center;
+  padding: 1% 2%;
+  margin: 5px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+.product .shoe-sec .detail a:hover {
+  background-color: #fccb61;
+}
+.product .shoe-sec .shoe-images img {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--grey);
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.product .shoe-sec .shoe-images img:hover {
+  background-color: var(--grey);
+}
+
+.product .shoe-sec .detail .shoe-name {
+  color: var(--black);
+  font-size: 2em;
+}
+
+.product .shoe-sec .detail .shoe-name {
+  color: var(--black);
+  font-size: 2em;
+}
+.product .shoe-sec .detail .price {
+  color: var(--black);
+  font-size: 1.5em;
+}
+/*#################    PROFILES    ################*/
+.profiles {
+  margin-bottom: 40px;
+}
+.profiles .profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+.profiles .profile-container .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+  width: 300px;
+  padding: 2em 3em;
+  background-color: var(--lightgrey);
+  flex: 1 1 320px;
+}
+.profile img {
+  border-radius: 50px;
+}
+.profile h2 {
+  color: var(--black);
+  margin: 5px 0;
+}
+.profile p {
+  color: var(--black);
+  margin: 5px 0;
+  text-align: center;
+}
+/*#################    NEWS LETTER SECTION    ################*/
+.news {
+  width: 80%;
+  border: 2px solid var(--grey);
+  margin: 0 auto;
+  border-radius: 5px;
+  align-items: center;
+  padding: 2em 3em;
+  background-color: var(--lightgrey);
+}
+.news .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.news .form h2 {
+  font-size: 2.5em;
+}
+.news .form p {
+  text-align: center;
+  margin: 5px 0 10px 0;
+}
+.news .form .inputs .email {
+  border: 2px solid var(--black);
+  padding: 0.3em 0.6em;
+  width: 250px;
+}
+.news .form .inputs .submit {
+  border: 2px solid var(--black);
+  width: 60px;
+  padding: 0.3em 0.6em;
+}
+
+/*#################    MEDIA QUERIES    ################*/
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #menu-bar {
+    display: block;
+  }
+
+  header .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+}
