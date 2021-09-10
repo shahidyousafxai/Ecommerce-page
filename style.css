@@ -37,6 +37,30 @@ html {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+.cart {
+  border: 1.5px solid var(--black);
+  border-radius: 3px;
+  width: 100px;
+  text-align: center;
+  padding: 1% 2%;
+  margin: 5px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+.cart:hover {
+  background-color: #fccb61;
+}
+.price {
+  font-weight: 700;
+  margin: 5px 0;
+}
+.price span {
+  font-size: 0.7em;
+  text-decoration: line-through;
+  color: var(--orange);
+  font-weight: 700;
+}
 /*################    NAVBAR    ###############*/
 #menu-bar {
   font-size: 1.5rem;
@@ -82,6 +106,124 @@ header .navbar a:hover,
 header .icons a:hover {
   color: var(--orange);
 }
+/*################    HOME SECTION    ###############*/
+.home {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8%;
+}
+.home .home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  flex: 1 1 400px;
+  margin-bottom: 50px;
+  padding: 1em 4em 1em 0;
+}
+.home .home-image {
+  width: 50%;
+  flex: 1 1 400px;
+  margin-bottom: 50px;
+  /* position: relative; */
+}
+.home .home-image .home-shoe {
+  width: 45rem;
+  position: absolute;
+}
+.home .home-image .home-shoe-text {
+  width: 45rem;
+}
+.home .home-text .p-head {
+  font-size: 2.2em;
+  color: var(--orange);
+}
+.home .home-text h1 {
+  font-size: 4em;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+.home .home-text .p-des {
+  font-size: 1.3em;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+.home .home-text .home-cart {
+  width: 120px;
+  padding: 1em 0;
+  border: 2px solid var(--black);
+}
+/*################    SERVICES SECTION    ###############*/
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 1em 2em;
+  border: 2px solid var(--grey);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: var(--lightgrey);
+}
+.services .service {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+}
+.services .service i {
+  font-size: 3em;
+  color: var(--orange);
+}
+.services .service h2 {
+  font-size: 2em;
+  color: var(--black);
+  margin: 10px 0;
+}
+.services .service p {
+  font-size: 1.2em;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+/*################    LATEST PRODUCT SECTION    ###############*/
+.latest {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.latest .latest-product {
+  width: 320px;
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+  background-color: var(--lightgrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+  padding: 2em 0;
+}
+.latest-product img {
+  margin: 50px 30px;
+}
+.latest-product h2 {
+  margin: 10px 0;
+  font-size: 2.5em;
+}
+.latest-product .shoe-price {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+.latest-product .shoe-cart {
+  padding: 0.8em;
+}
 /*################    PRODUCT SECTION    ###############*/
 .product .shoe-sec {
   display: flex;
@@ -112,29 +254,15 @@ header .icons a:hover {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.product .shoe-sec .detail .price {
+.price {
   font-weight: 700;
   margin: 5px 0;
 }
-.product .shoe-sec .detail .price span {
+.price span {
   font-size: 0.7em;
   text-decoration: line-through;
   color: var(--orange);
   font-weight: 700;
-}
-.product .shoe-sec .detail a {
-  border: 1.5px solid var(--black);
-  border-radius: 3px;
-  width: 100px;
-  text-align: center;
-  padding: 1% 2%;
-  margin: 5px 0;
-  font-size: 1.2em;
-  font-weight: 600;
-  background-color: #ffffff;
-}
-.product .shoe-sec .detail a:hover {
-  background-color: #fccb61;
 }
 .product .shoe-sec .shoe-images img {
   display: flex;
@@ -147,12 +275,10 @@ header .icons a:hover {
 .product .shoe-sec .shoe-images img:hover {
   background-color: var(--grey);
 }
-
 .product .shoe-sec .detail .shoe-name {
   color: var(--black);
   font-size: 2em;
 }
-
 .product .shoe-sec .detail .shoe-name {
   color: var(--black);
   font-size: 2em;
@@ -200,6 +326,7 @@ header .icons a:hover {
   width: 80%;
   border: 2px solid var(--grey);
   margin: 0 auto;
+  margin-bottom: 40px;
   border-radius: 5px;
   align-items: center;
   padding: 2em 3em;
@@ -230,10 +357,39 @@ header .icons a:hover {
   width: 60px;
   padding: 0.3em 0.6em;
 }
-
+/*#################    FOOTER    ################*/
+.footer {
+  width: 80%;
+  border: 2px solid var(--grey);
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em 3em;
+  background-color: var(--lightgrey);
+}
+.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 220px;
+  margin-bottom: 20px;
+}
+.footer .footer-container h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+.footer .footer-container a {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+.footer .footer-container a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
 /*#################    MEDIA QUERIES    ################*/
-
-/* Media Queries */
 @media (max-width: 768px) {
   #menu-bar {
     display: block;
@@ -243,7 +399,6 @@ header .icons a:hover {
     display: none;
   }
 }
-
 @media (max-width: 400px) {
   html {
     font-size: 50%;
