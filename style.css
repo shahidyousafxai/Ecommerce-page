@@ -118,22 +118,26 @@ header .icons a:hover {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  flex: 1 1 400px;
+  flex: 1 1 520px;
   margin-bottom: 50px;
-  padding: 1em 4em 1em 0;
+  padding: 1em 4em 1em 4em;
 }
 .home .home-image {
-  width: 50%;
-  flex: 1 1 400px;
+  flex: 1 1 520px;
   margin-bottom: 50px;
-  /* position: relative; */
+  position: relative;
+}
+.home-images-container {
+  width: 80%;
+  margin: 0 auto;
 }
 .home .home-image .home-shoe {
-  width: 40em;
   position: absolute;
+  width: 80%;
+  z-index: 10;
 }
 .home .home-image .home-shoe-text {
-  width: 40em;
+  width: 100%;
 }
 .home .home-text .p-head {
   font-size: 2.2em;
