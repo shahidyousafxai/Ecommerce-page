@@ -129,11 +129,11 @@ header .icons a:hover {
   /* position: relative; */
 }
 .home .home-image .home-shoe {
-  width: 45rem;
+  width: 40em;
   position: absolute;
 }
 .home .home-image .home-shoe-text {
-  width: 45rem;
+  width: 40em;
 }
 .home .home-text .p-head {
   font-size: 2.2em;
