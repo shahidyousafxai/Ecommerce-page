@@ -111,7 +111,7 @@ header .icons a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 8%;
+  padding: 5% 8%;
 }
 .home .home-text {
   display: flex;
@@ -121,23 +121,46 @@ header .icons a:hover {
   flex: 1 1 520px;
   margin-bottom: 50px;
   padding: 1em 4em 1em 4em;
+  animation: move 1s linear backwards;
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
 }
 .home .home-image {
+  width: 60%;
   flex: 1 1 520px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   position: relative;
 }
 .home-images-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .home .home-image .home-shoe {
   position: absolute;
-  width: 80%;
+  width: 90%;
   z-index: 10;
+  transform: rotate(-30deg);
+  animation: rotate 1s linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
 }
 .home .home-image .home-shoe-text {
-  width: 100%;
+  width: 80%;
+  z-index: -10;
+  animation: down 1s linear backwards;
+}
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+  }
 }
 .home .home-text .p-head {
   font-size: 2.2em;
@@ -182,6 +205,16 @@ header .icons a:hover {
 .services .service i {
   font-size: 3em;
   color: var(--orange);
+  animation: fall 1s linear backwards;
+}
+@keyframes fall {
+  0% {
+    overflow-y: hidden;
+    transform: translateY(-5rem);
+  }
+}
+.services .service:hover i {
+  transform: scale(1.4);
 }
 .services .service h2 {
   font-size: 2em;
@@ -203,6 +236,32 @@ header .icons a:hover {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+/* .latest-product .product-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 160%;
+  left: -50%;
+  overflow: hidden;
+} */
+/* .latest-product:hover .product-icons {
+  left: 13%;
+} */
+/* .latest-product .product-icons a {
+  height: 4.5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border: 0.1rem solid var(--black);
+  border-radius: 0.5rem;
+  background: #fff;
+  margin-top: 0.5rem;
+  overflow: hidden;
+} */
+/* .flex {
+  display: flex;
+} */
 .latest .latest-product {
   width: 320px;
   border: 2px solid var(--grey);
@@ -216,6 +275,9 @@ header .icons a:hover {
 }
 .latest-product img {
   margin: 50px 30px;
+}
+.latest-product:hover img {
+  transform: rotate(-30deg) scale(1.1);
 }
 .latest-product h2 {
   margin: 10px 0;
@@ -290,6 +352,9 @@ header .icons a:hover {
 .product .shoe-sec .detail .price {
   color: var(--black);
   font-size: 1.5em;
+}
+.display-shoe img:hover {
+  transform: scale(1.1);
 }
 /*#################    PROFILES    ################*/
 .profiles {
